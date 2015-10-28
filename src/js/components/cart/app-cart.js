@@ -1,5 +1,5 @@
 var React = require('react');
-var AppStore = require('../stores/app-store');
+var AppStore = require('../../stores/app-store');
 var RemoveFromCart = require('./app-removefromcart');
 var Increase = require('./app-increaseitem');
 var Decrease = require('./app-decreaseitem');
@@ -25,7 +25,7 @@ var Catalog = React.createClass({
             total += subtotal;
             return (
                 <tr>
-                    <td>RemoveFromCart index={i} /</td>
+                    <td><RemoveFromCart index={i} /></td>
                     <td>{item.title}</td>
                     <td>{item.qty}</td>
                     <td>
